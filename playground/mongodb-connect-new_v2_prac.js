@@ -15,12 +15,11 @@ MongoClient.connect('mongodb://localhost:27017/Emp', (err,client)=> {
         return console.log('an err occurred' + err);
     }
     const db = client.db('Employee');
-    // db.collection('EmpDetails').insertOne({
-    //     _id : 109,
-    //     EmpName: "Harry",
-    //     EmpId : 10,
-    //     EmpLocn: "London"
-    // });
+    db.collection('EmpDetails').insertOne({        
+        EmpName: "Harry",
+        EmpId : 10,
+        EmpLocn: "London"
+    });
     //without toArray,we would not be view the cursor
     // db.collection('EmpDetails').find( ).toArray().then( (doc) =>
     // {
