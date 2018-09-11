@@ -21,7 +21,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err,client) =>{
     // client.close();
 
     //db.collection(.find --> Creates a cursor for a query that can be used to iterate over results from MongoDB
-    //and returns promise if no callback
+    //and toArray() returns promise if no callback
 
     //toArray is to convert into an arry for viewing
     //then ==> cos it is a promise

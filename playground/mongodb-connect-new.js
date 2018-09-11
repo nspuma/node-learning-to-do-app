@@ -1,6 +1,8 @@
 //this is my practice js for connecting to mongodb
+// MongoClient is a constructor that creates a new MongoClient instance
 const MongoClient = require('mongodb').MongoClient;
 
+//to establish a connecttion to mongodb
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err,client)=>
 {
     if(err) 
